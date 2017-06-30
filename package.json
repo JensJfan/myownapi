@@ -1,0 +1,34 @@
+{
+  "name": "myownapi",
+  "version": "1.0.0",
+  "description": "My Own API with Node JS",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JensJfan/myownapi.git"
+  },
+  "keywords": [
+    "RESTful",
+    "API",
+    "Node",
+    "js"
+  ],
+  "author": "Jens Andersen <jfan@rts.dk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JensJfan/myownapi/issues"
+  },
+  "homepage": "https://github.com/JensJfan/myownapi#readme",
+  "dependencies": {
+    "morgan": "^1.8.2",
+    "mysql2": "^1.3.5",
+    "restify": "^4.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
