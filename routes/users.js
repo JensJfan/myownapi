@@ -19,15 +19,19 @@ module.exports = function(app){
         res.send(201, req.params);
     });
 
-    app.get('/users:username', function(req, res, next){
+    app.get('/users/:username', function(req, res, next){
+        res.send(req.params);
+    });
+
+    app.put('/users/:username', function(req, res, next){
         res.send(405);
     });
 
-    app.put('/users:username', function(req, res, next){
+    app.patch('/users/:username', function(req, res, next){
         res.send(405);
     });
 
-    app.patch('/users:username', function(req, res, next){
+    app.del('/users/:username', function(req, res, next){
         res.send(405);
     });
 }
