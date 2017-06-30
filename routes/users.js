@@ -1,18 +1,10 @@
+const path = require('path');
+const mysql = require(path.join(__dirname, '..', 'config', 'mysql'));
+const db = mysql.connect();
+
 module.exports = function(app){
     app.get('/users', function(req, res, next){
-        res.send([
-            {
-                "user": {
-                    "username": "Jens Andersen",
-                    "usermail": "jfan@rts.dk"
-                }
-            },{
-                "user": {
-                    "username": "Carsten Lund",
-                    "usermail": "clu@rts.dk"
-                }
-            }
-        ]);
+        res.send();
     });
 
     app.post('/users', function(req, res, next){
